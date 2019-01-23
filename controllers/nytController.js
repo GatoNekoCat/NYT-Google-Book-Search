@@ -8,17 +8,11 @@ module.exports = {
             req.query
         );
         axios
-            .get("https://api.nytimes.com/svc/search/v2/articlesearch.json", {
-                params
-
-            })
+            .get("https://api.nytimes.com/svc/search/v2/articlesearch.json", {params})
             .then(response => {
-                db.Article
-                    .find(
-
-                    )
-                    .then(
-                        dbArticles =>
+                db.Article.find()
+                .then(
+                    dbArticles =>
                             response.data.response.docs.filter(article =>
                                 dbArticles.every(
                                     dbArticles => dbArticles._id.toString() !== article._id
