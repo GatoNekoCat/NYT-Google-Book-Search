@@ -1,0 +1,28 @@
+{
+  "name": "NYT-Google-Book-Search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GatoNekoCat/NYT-Google-Book-Search.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GatoNekoCat/NYT-Google-Book-Search/issues"
+  },
+  "homepage": "https://github.com/GatoNekoCat/NYT-Google-Book-Search#readme"
+}
